@@ -100,3 +100,7 @@ function whatCanIDrink(n){
         return "Sorry. I can't tell you what to drink because that age is incorrect";
     }
 }
+
+function printError(){
+    console.log("error");
+}

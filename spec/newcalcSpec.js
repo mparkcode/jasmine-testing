@@ -171,5 +171,11 @@ describe("Extra calculator functions", function() {
            expect(whatCanIDrink(800)).toBe("Sorry. I can't tell you what to drink because that age is incorrect");
        });
     });
+    
+    describe("errors logged to console", function(){
+        spyOn(console, "log");
+        printError();
+        expect(console.log).toHaveBeenCalledWith("error");
+    });
 
 });
